@@ -235,8 +235,10 @@ public class LibraryViewController {
             libraryController.undoCommand();
             tblBook.refresh();
         } else {
-            showMessage("No hay comandos para deshacer", "No hay comandos para deshacer",
-                    "No puedes deshacer un comando porque no hay comandos que hayan sido ejecutados previamente.", Alert.AlertType.WARNING);
+            showMessage("No hay comandos para deshacer",
+                    "No hay comandos para deshacer",
+                    "No puedes deshacer un comando porque no hay comandos que hayan sido ejecutados previamente.",
+                    Alert.AlertType.WARNING);
         }
     }
 
@@ -249,8 +251,10 @@ public class LibraryViewController {
             libraryController.redoCommand();
             tblBook.refresh();
         } else {
-            showMessage("No hay comandos para rehacer", "No hay comandos para rehacer",
-                    "No puedes rehacer un comando porque no hay comandos que hayan sido deshechos previamente.", Alert.AlertType.WARNING);
+            showMessage("No hay comandos para rehacer",
+                    "No hay comandos para rehacer",
+                    "No puedes rehacer un comando porque no hay comandos que hayan sido deshechos previamente.",
+                    Alert.AlertType.WARNING);
         }
     }
 }
